@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglApi", "TogglApi\TogglApi.csproj", "{FA5D017E-39BB-4C67-B4A6-BC9FFDBA8353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglApi.Web", "TogglApi.Web\TogglApi.Web.csproj", "{D12AECE8-86AA-4878-8EBE-C6887A094679}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B30E673D-7753-4E10-A629-DA51DD0D2D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglApi.Tests", "TogglApi.Tests\TogglApi.Tests.csproj", "{BD70D16B-E00F-4F4F-B2B1-91EF5F1D9A3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA5D017E-39BB-4C67-B4A6-BC9FFDBA8353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5D017E-39BB-4C67-B4A6-BC9FFDBA8353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5D017E-39BB-4C67-B4A6-BC9FFDBA8353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5D017E-39BB-4C67-B4A6-BC9FFDBA8353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12AECE8-86AA-4878-8EBE-C6887A094679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12AECE8-86AA-4878-8EBE-C6887A094679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12AECE8-86AA-4878-8EBE-C6887A094679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12AECE8-86AA-4878-8EBE-C6887A094679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD70D16B-E00F-4F4F-B2B1-91EF5F1D9A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD70D16B-E00F-4F4F-B2B1-91EF5F1D9A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD70D16B-E00F-4F4F-B2B1-91EF5F1D9A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD70D16B-E00F-4F4F-B2B1-91EF5F1D9A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD70D16B-E00F-4F4F-B2B1-91EF5F1D9A3A} = {B30E673D-7753-4E10-A629-DA51DD0D2D87}
+	EndGlobalSection
+EndGlobal
