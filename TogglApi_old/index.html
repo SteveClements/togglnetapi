@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        function crossDomainFail() {
+            var data = {
+                api_token: "67be300bcfc9c09f40636074303ce3ff"
+            };
+            $.ajax({
+                url: "https://www.toggl.com/api/v8/me",
+                type: "POST",
+                contentType: "application/json",
+                data: data
+            }).done(function (data) {
+                console.log(data);
+                $("#message").html(JSON.stringify(data));
+            }).fail(function (xhr, status) {
+                console.error("POST ERROR: " + status);
+                console.error(xhr);
+            });
+        }
+    </script>
+</head>
+<body>
+    <span id="message"></span>
+</body>
+</html>

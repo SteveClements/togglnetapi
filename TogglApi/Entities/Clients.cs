@@ -23,6 +23,10 @@ namespace TogglApi.Entities
 
         #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Client> Get()
         {
             var client = new RestClient(Constants.Urls.ME_CLIENTS);
@@ -36,6 +40,11 @@ namespace TogglApi.Entities
             return resp.Data;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Client Get(string id)
         {
             var client = new RestClient(Constants.Urls.ME_CLIENTS + "/{clientId}");
