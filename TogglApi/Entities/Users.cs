@@ -57,6 +57,30 @@ namespace TogglApi.Entities
             return resp.Data.data;
         }
 
+        public List<TimeEntry> GetAllTimeEntries(DateTime start, DateTime end)
+        {
+            try
+            {
+                var startdate = "start_date=" + start.ToString("o");
+                var enddate = "end_date=" + end.ToString("o");
+
+                var client = new RestClient(Constants.Urls.TIMEENTRIES_URL + startdate + "&" + enddate);
+                var request = new RestRequest(Method.GET);
+                request.AddTogglAuth(_auth);
+
+                var resp = client.Execute<List<TimeEntry>>(request);
+
+                var content = resp.Content;
+
+                return resp.Data;
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            return new List<TimeEntry>();
+        }
+
         /// <summary>
         /// 
         /// </summary>

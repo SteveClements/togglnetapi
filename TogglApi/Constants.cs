@@ -11,6 +11,7 @@ namespace TogglApi
         public class Urls
         {
             public const string API_URL = "https://www.toggl.com/api/v8";
+            public const string TIMEENTRIES_URL = API_URL + "/time_entries?";
             public const string ME = API_URL + "/me";
             public const string ME_DETAILED = ME + "?with_related_data=true";
             public const string ME_CLIENTS = API_URL + "/clients";
